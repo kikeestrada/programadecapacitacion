@@ -7,20 +7,20 @@ mixin card(cardImage, cardTitle, description, link)
 			div(class='s-justify'): p=description
 
 div(class='ed-grid')
-	h1(class='main-text-color') Especialidad en Programación
+	h1(class='main-text-color') Bases de Lógica y Programación
 div(class='ed-grid m-grid-2 l-grid-3 lg-grid-4 row-gap l-big-section')
 	-for(var i = 0; i < programacion.length; i++)
 		-var especialidad = programacion[i]
 		+card(especialidad.img, especialidad.title, especialidad.description, especialidad.link)
 
 div(class='ed-grid')
-	h1(class='main-text-color') Especialidad en Front End
+	h1(class='main-text-color') Desarrollo Front End
 div(class='ed-grid m-grid-2 l-grid-3 lg-grid-4 row-gap l-big-section')
 	-for(var i = 0; i < frontend.length; i++)
 		-var especialidad = frontend[i]
 		+card(especialidad.img, especialidad.title, especialidad.description, especialidad.link)
 div(class='ed-grid')
-	h1(class='main-text-color') Especialidad en Diseño Web
+	h1(class='main-text-color') Diseño Web
 div(class='ed-grid m-grid-2 l-grid-3 lg-grid-4 row-gap l-big-section')
 	-for(var i = 0; i < disenno.length; i++)
 		-var especialidad = disenno[i]
